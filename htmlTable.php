@@ -1,7 +1,7 @@
 <?php
 class htmlTable extends page {
 
-public function get(){
+static public function get(){
 
 $row = 1;
 if (($table = fopen($_GET['filename'], "r" )) !== false ) {
