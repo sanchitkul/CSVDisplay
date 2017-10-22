@@ -27,16 +27,22 @@ if (($table = fopen($_GET['filename'], "r" )) !== false ) {
             }
             if ($row == 1) {
                 echo '<th>'.$value.'</th>';
-            }else{
+            }
+            else
+            {
                 echo '<td>'.$value.'</td>';
             }
         }
 
-        if ($row == 1) {
+        if ($row == 1) 
+        {
             echo '</tr></thead><tbody>';
-        }else{
+        }
+        else
+        {
             echo '</tr>';
         }
+        
         $row++;
     }
 
@@ -44,7 +50,7 @@ if (($table = fopen($_GET['filename'], "r" )) !== false ) {
     fclose($table);
 }
 
-  }
+}
 
 }
 ?>
